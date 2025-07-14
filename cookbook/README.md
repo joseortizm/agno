@@ -58,6 +58,14 @@ export OPENAI_API_KEY=***
 export GOOGLE_API_KEY=***
 ```
 
+## Setup (Jose)
+
+### Virtual environment
+
+```shell
+conda activate agents
+```
+
 ## Run a cookbook
 
 ```shell
