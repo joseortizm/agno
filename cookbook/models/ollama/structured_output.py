@@ -27,16 +27,25 @@ class MovieScript(BaseModel):
 
 # Agent that returns a structured output
 structured_output_agent = Agent(
-    model=Ollama(id="llama3.2"),
+    model=Ollama(id="llama3.2:latest"),
     description="You write movie scripts.",
     response_model=MovieScript,
 )
 
+# No veo mejoras significativas en json_mode_response
+# json_mode_agent = Agent(
+#     model=Ollama(id="llama3.2:latest"),
+#     description="You write movie scripts.",
+#     response_model=MovieScript,
+# )
+
 # Get the response in a variable
-# json_mode_response: RunResponse = json_mode_agent.run("New York")
+
+# json_mode_response: RunResponse = json_mode_agent.run("back to the future")
 # pprint(json_mode_response.content)
-# structured_output_response: RunResponse = structured_output_agent.run("New York")
-# pprint(structured_output_response.content)
+
+structured_output_response: RunResponse = structured_output_agent.run("Generate a movie script outline for a sci-fi adventure.")
+pprint(structured_output_response.content)
 
 # Run the agent
-structured_output_agent.print_response("New York")
+# structured_output_agent.print_response("back to the future")
