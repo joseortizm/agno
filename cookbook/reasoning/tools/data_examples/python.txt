@@ -1,0 +1,2 @@
+# Nombre del curso: "Python"
+## El proyecto final del curso python para estudiantes con discapacidad sera un complemento del NVDA.
