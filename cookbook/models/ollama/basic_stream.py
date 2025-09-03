@@ -5,9 +5,9 @@ from agno.models.ollama import Ollama
 agent = Agent(model=Ollama(id="qwen3:4b"), markdown=True)
 
 # Get the response in a variable
-run_response: Iterator[RunResponseEvent] = agent.run("De que trata el algoritmo Dijkstra", stream=True)
-for chunk in run_response:
-    print(chunk.content)
+#run_response: Iterator[RunResponseEvent] = agent.run("De que trata el algoritmo Dijkstra", stream=True)
+#for chunk in run_response:
+    #print(chunk.content)
     ## \<think>
     ## Okay
     ## ,
@@ -23,4 +23,4 @@ for chunk in run_response:
     ## .
 
 # Print the response in the terminal
-#agent.print_response("De que trata el algoritmo Dijkstra?", stream=True)
+agent.print_response("De que trata el algoritmo Dijkstra? Se breve.", stream=True)
