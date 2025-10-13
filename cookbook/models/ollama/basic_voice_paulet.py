@@ -19,7 +19,7 @@ import random
 # CONFIGURACIÓN GLOBAL
 # ============================================
 
-DEEPGRAM_API_KEY = "7cc7ed130e6393062db37fd0a8618a902485f6f4"  # ⚠️ Reemplaza con tu API Key
+DEEPGRAM_API_KEY = "TU_API_KEY_AQUI"  # ⚠️ Reemplaza con tu API Key
 
 # ============================================
 # CONFIGURACIÓN DE PAULET
