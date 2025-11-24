@@ -258,6 +258,9 @@ We welcome contributions, read our [contributing guide](https://github.com/agno-
 
 Agno logs which model an agent used so we can prioritize updates to the most popular providers. You can disable this by setting `AGNO_TELEMETRY=false` in your environment.
 
+## Notes
+- In the `test` Conda environment, I updated the Python version so it would work, and I installed a new version of Agno to make the `gemini_tutor_v2` project run properly.
+
 <p align="left">
   <a href="#top">⬆️ Back to Top</a>
 </p>
